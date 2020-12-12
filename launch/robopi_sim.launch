@@ -12,7 +12,9 @@
 <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)"/>
 
 
-<include file="$(find robopi_low_level_control)/launch/low_level_control_sim.launch"/>
+<include file="$(find robopi_low_level_control)/launch/low_level_control.launch">
+    <arg name="start_hardware_interface" value="false"/>
+</include>
 
 <!-- convert joint states to TF transforms for rviz, etc -->
 <param name="robot_description" command="rosrun xacro xacro $(arg model)"/>
