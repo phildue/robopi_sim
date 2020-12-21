@@ -16,7 +16,7 @@
         <arg name="start_hardware_interface" value="false"/>
     </include>
 
-    <include file="$(find robopi)/launch/map.launch"/>-->
+    <include file="$(find robopi)/launch/move_base.launch"/>
 
 
     <!-- convert joint states to TF transforms for rviz, etc -->
@@ -26,9 +26,9 @@
     </node>
 
 
-    <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
+   <!-- <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
         <param name="default_topic" value="/robopi/diff_drive_controller/cmd_vel"/>
-    </node>
+    </node>-->
 
 </launch>
 
