@@ -5,11 +5,8 @@
     <xacro:include filename="chassis_gazebo.urdf.xacro" />
     <xacro:include filename="wheels_gazebo.urdf.xacro" />
     <xacro:include filename="sonar_gazebo.urdf.xacro" />
+    <xacro:include filename="camera.urdf.xacro" />
 
-    <gazebo>
-        <plugin name="gazebo_ros_control" filename= "libgazebo_ros_control.so">
-            <robotNamespace>/</robotNamespace>
-        </plugin>
-    </gazebo>
+
 
 </robot>
